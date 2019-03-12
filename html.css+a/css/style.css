@@ -1,0 +1,321 @@
+/* ここから下に記述していきましょう */
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+メモ
+css側でコメント機能を使いたいときは
+mac コマンドキー + /(スラッシュ)
+windows コントロールキー + /(スラッシュ)
+
+背景画像
+background: url(xxxx)
+
+文字真ん中
+text-align: center
+
+横並び
+display:flex
+横並びにするときは必ず、display:flexを使ってからじゃないと横並びにならないので注意
+display:flexを使ったあとに、横を制御する[justify-content: xxx]を使ったりする
+
+
+*/
+.wrap {
+  max-width: 1366px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  font-size: 21px;
+  padding: 50px;
+}
+
+.navList li {
+  margin-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+a:hover {
+  background-color: silver;
+  opacity: 0.6;
+}
+
+#main {
+  background-image: url(..//img/mainbg.png);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.titleText{
+  display:none;
+}
+
+.titleText p {
+  color: #fff;
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #ffd61a;
+  padding: 60px 0px 30px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #222222;
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 16px;
+  color: #222222;
+  line-height: 140%;
+}
+
+/* --------------
+   about
+-------------- */
+
+#about p {
+  margin-bottom: 40px;
+}
+
+.imageBox{
+  margin: 80px auto 0;
+  width: 500px;
+}
+
+ .slideSet img{
+   height: 300px;
+   width: 500px;
+} 
+
+
+/* --------------
+   course
+-------------- */
+
+#course p {
+  margin: 30px 0 60px 0;
+}
+
+.course_wrapper {
+  background-color: #fafafa;
+  display:flex;
+  flex-wrap: wrap;
+  align-items:center;
+  box-sizing: border-box;
+}
+
+.course_img {
+  width: 683px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.course_text {
+  width: 683px;
+  height: auto;
+  text-align: left;
+  padding-left: 50px;
+}
+
+
+.course_text p {
+  margin-top: 40px;
+}
+
+h4 {
+  color: #222222;
+  font-size: 24px;
+}
+
+
+
+/* --------------
+   news
+-------------- */
+
+
+.newsList {
+  display: flex;
+  justify-content: center;
+}
+
+.news_1 {
+  width: 300px;
+  margin: 0 15px;
+}
+
+.newsImg {
+  width: 100%;
+  margin-bottom: 30px; 
+}
+
+.news_1 p {
+  text-align: left;
+  margin-top: 24px;
+  font-size: 15px;
+}
+
+.more {
+  margin-bottom: 60px;
+}
+
+button{
+  font-size: 18px;
+  width: 300px;
+  height: 60px;
+  color: #fff;
+  background-color: #ffd61a;
+  text-decoration: none;
+  outline: 0;
+  margin-top: 30px;
+}
+
+button:hover{
+  background-color:orange;
+}
+
+
+/* --------------
+   access
+-------------- */
+
+#access{
+  background-color: #fafafa;
+}
+
+
+.information-list{
+  text-align: left;
+  list-style: none;
+  line-height: 50px;
+  margin: 60px 30px;
+}
+
+.information-outer {
+  display: flex;
+  justify-content: center;
+}
+
+/* --------------
+   contact
+-------------- */
+
+#contact p {
+  margin-bottom: 30px;
+}
+
+.form-wrapper {
+  width: 640px;
+  margin: auto;
+  border-top: 2px solid #bfbfbf;
+}
+
+.form-inner {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.form-title {
+  width: 240px;
+  padding: 8px 64px 0px 16px;
+  text-align: left;
+  border-right: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.form-item {
+  width: 400px;
+  text-align: left;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.form-parts {
+  height: 36px;
+  width: 328px;
+  margin: 8px auto 8px 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #222222;
+}
+
+select {
+  height: 36px;
+  width: 328px;
+  margin: 8px auto 8px 8px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.motive{
+  margin: 8px auto 16px 8px;
+  font-size: 14px;
+}
+
+input[type=radio] {
+  margin-right: 24px;
+}
+
+.form-detail{
+  height: 150px;
+  width: 328px;
+  margin: 8px auto 8px 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #222222;
+}
+
+input.button{
+  font-size: 18px;
+  width: 300px;
+  height: 60px;
+  color: #fff;
+  background-color: #ffd61a;
+  text-decoration: none;
+  outline: 0;
+  margin-top: 30px;
+}
+
+.button:hover{
+  background-color:orange;
+}
+
+
+/* footer */
+
+footer{
+  color: #fff;
+  background-color:#707070;
+  padding: 30px 0;
+  margin-top: 140px;
+}
